@@ -1,0 +1,7 @@
+
+    // specify your own database credentials
+    public $host = "localhost";
+    public $db_name = "f11fheux_summit";
+    public $username = "f11fheux_summit";
+    public $password = "Summit2019?";
+    public $conn;
