@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Summit 1.0 - Back Office</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/backoffice.css">
+</head>
+<body>
+</body>
+
+<div class="menu">
+    <p></p>
+</div>
+    
+<div class="container">
+    <div  class="comando">
+        <img id="toogle" width=50px title="1" src="../img/icons/switch-on.png">
+    </div>
+    <div class="section main">
+        <iframe id="active" height="800px"  class="big frame" src="../api/registo/read.php"></iframe>
+    </div>
+    
+</div>
+
+<script>
+ document.getElementById("toogle").addEventListener("click", myFunction);
+
+function myFunction() {
+  // alert ("Hello World!");
+    element=document.getElementById("toogle").title;
+    if (element=="1") {
+            document.getElementById("active").src = "../api/form.php";
+            document.getElementById("toogle").src = "../img/icons/switch-off.png";
+            document.getElementById("toogle").title = "2";
+    } else {
+            document.getElementById("active").src = "../api/registo/read.php";
+            document.getElementById("toogle").src = "../img/icons/switch-on.png";
+            document.getElementById("toogle").title = "1";
+    }   
+}  
+    
+</script>
+
+</html>
