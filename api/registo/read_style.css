@@ -1,0 +1,134 @@
+body {
+    
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.titulo{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 800px;
+    flex-grow: 10;
+    
+    
+    /* width: 150px; */
+}
+
+.1, 2. {
+    display:flex;
+}
+
+
+.main {
+    min-width: 700px;
+    flex-basis: 800;
+    flex-grow: 10;  
+}
+
+@media screen and (max-width:850px) {
+    .container {
+        flex-flow: column;
+        flex-wrap: wrap;
+    }
+    .session{
+        flex-flow: row;
+    }  
+
+    .main {
+
+    }    
+}
+
+/* For left column elements */
+.left {
+    font: 1.5em, "Trebuchet MS", Arial;
+    margin-left: 5%;
+}
+
+p {
+    font: 10pt "Trebuchet MS", Arial;
+}
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: .8em;
+  border-collapse: collapse;
+  /* width: 100%; */
+}
+
+td,  th {
+    border: 0px solid #ddd;
+    padding: 5px;
+}
+
+th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#participante td {
+    margin-top: 20px;
+}
+
+#controlo tr:nth-of-type(3n+3){
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#controlo tr:hover {background-color: #ddd;border-color: cadetblue;}
+
+.cat {
+    font-size: 8pt;
+
+}
+
+.button {
+    box-sizing: border-box;
+    padding:5px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 2px;
+    text-decoration: none; 
+    font-size: 1em;
+}
+
+.botao {
+    font-size: 8pt;
+    box-sizing: border-box;
+    width: 100px;
+    text-decoration: none;
+    padding:3px;
+    margin: 1px;
+    border: 1px solid lightgray; 
+    border-radius: 2px;
+    color: lightgray;
+}
+
+.botao:hover {
+    box-sizing: border-box;
+    border: 1px solid darkgray;
+    color: darkgray;
+}
+
+.checkin {
+    background-color: lightgray;
+    color: black;
+    border: 1px solid lightgray;
+}
+
+.checkin:hover {
+    color: black;
+    border: 1px solid darkgray;
+}
