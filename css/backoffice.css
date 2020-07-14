@@ -1,0 +1,48 @@
+body {
+}
+
+.menu {
+    width: 90%;
+    margin: 8px;
+    height: 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:90%;
+    margin: auto;
+}
+
+.section {
+    display:flex;
+    flex-direction: column;
+    margin: 8px;
+    flex-grow: 10;
+    overflow: hidden;
+}
+
+.main {
+    flex-grow: 1;
+    min-width: 800px;
+    width:100%;
+    overflow: hidden;
+    margin: 8px;
+    padding: 5px;
+}
+
+.frame {
+    border: none;
+}
+
+.big {
+    height=800px;
+}
+
+p, h1, h2 {
+    margin 0px;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
